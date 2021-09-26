@@ -1,0 +1,99 @@
+;H8-3048Foneブート用アセンブリファイル
+;200608 kodani_kz
+
+;!!!---【注意】走行時はこっちを使う---!!!
+
+;=======================================
+; 定義
+;=======================================
+RESERVE: .EQU    H'FFFFFFFF             ; 未使用領域のアドレス
+
+;=======================================
+; 外部参照
+;=======================================
+        .IMPORT _main
+        .IMPORT _INITSCT
+        .IMPORT _interrupt_timer0
+		.IMPORT _intTXI0   ; トレーニングボード使用時はコメントを外す
+						   ; intTXI0関数でbeepさせるため77行目も外す & 78行目をコメントアウト	
+		.IMPORT _intTXI1 
+
+;=======================================
+; ベクタセクション
+;=======================================
+        .SECTION V
+        .DATA.L RESET_START             ;  0 H'000000   ﾘｾｯﾄ
+        .DATA.L RESERVE                 ;  1 H'000004   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  2 H'000008   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  3 H'00000c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  4 H'000010   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  5 H'000014   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  6 H'000018   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ;  7 H'00001c   外部割り込み NMI
+        .DATA.L RESERVE                 ;  8 H'000020   ﾄﾗｯﾌﾟ命令
+        .DATA.L RESERVE                 ;  9 H'000024   ﾄﾗｯﾌﾟ命令
+        .DATA.L RESERVE                 ; 10 H'000028   ﾄﾗｯﾌﾟ命令
+        .DATA.L RESERVE                 ; 11 H'00002c   ﾄﾗｯﾌﾟ命令
+        .DATA.L RESERVE                 ; 12 H'000030   外部割り込み IRQ0
+        .DATA.L RESERVE                 ; 13 H'000034   外部割り込み IRQ1
+        .DATA.L RESERVE                 ; 14 H'000038   外部割り込み IRQ2
+        .DATA.L RESERVE                 ; 15 H'00003c   外部割り込み IRQ3
+        .DATA.L RESERVE                 ; 16 H'000040   外部割り込み IRQ4
+        .DATA.L RESERVE                 ; 17 H'000044   外部割り込み IRQ5
+        .DATA.L RESERVE                 ; 18 H'000048   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 19 H'00004c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 20 H'000050   WDT MOVI
+        .DATA.L RESERVE                 ; 21 H'000054   REF CMI
+        .DATA.L RESERVE                 ; 22 H'000058   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 23 H'00005c   ｼｽﾃﾑ予約
+        .DATA.L _interrupt_timer0       ; 24 h'000060   ITU0 IMIA0
+        .DATA.L RESERVE                 ; 25 H'000064   ITU0 IMIB0
+        .DATA.L RESERVE                 ; 26 H'000068   ITU0 OVI0
+        .DATA.L RESERVE                 ; 27 H'00006c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 28 H'000070   ITU1 IMIA1
+        .DATA.L RESERVE                 ; 29 H'000074   ITU1 IMIB1
+        .DATA.L RESERVE                 ; 30 H'000078   ITU1 OVI1
+        .DATA.L RESERVE                 ; 31 H'00007c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 32 H'000080   ITU2 IMIA2
+        .DATA.L RESERVE                 ; 33 H'000084   ITU2 IMIB2
+        .DATA.L RESERVE                 ; 34 H'000088   ITU2 OVI2
+        .DATA.L RESERVE                 ; 35 H'00008c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 36 H'000090   ITU3 IMIA3
+        .DATA.L RESERVE                 ; 37 H'000094   ITU3 IMIB3
+        .DATA.L RESERVE                 ; 38 H'000098   ITU3 OVI3
+        .DATA.L RESERVE                 ; 39 H'00009c   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 40 H'0000a0   ITU4 IMIA4
+        .DATA.L RESERVE                 ; 41 H'0000a4   ITU4 IMIB4
+        .DATA.L RESERVE                 ; 42 H'0000a8   ITU4 OVI4
+        .DATA.L RESERVE                 ; 43 H'0000ac   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 44 H'0000b0   DMAC DEND0A
+        .DATA.L RESERVE                 ; 45 H'0000b4   DMAC DEND0B
+        .DATA.L RESERVE                 ; 46 H'0000b8   DMAC DEND1A
+        .DATA.L RESERVE                 ; 47 H'0000bc   DMCA DEND1B
+        .DATA.L RESERVE                 ; 48 H'0000c0   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 49 H'0000c4   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 50 H'0000c8   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 51 H'0000cc   ｼｽﾃﾑ予約
+        .DATA.L RESERVE                 ; 52 H'0000d0   SCI0 ERI0
+        .DATA.L RESERVE                 ; 53 H'0000d4   SCI0 RXI0
+        .DATA.L _intTXI0 				; 54 h'0000d8 SCI0 TXI0 
+        ;.DATA.L RESERVE 				; 54 h'0000d8 SCI0 TXI0 
+        .DATA.L RESERVE                 ; 55 H'0000dc   SCI0 TEI0
+        .DATA.L RESERVE                 ; 56 H'0000e0   SCI1 ERI1
+        .DATA.L RESERVE                 ; 57 H'0000e4   SCI1 RXI1
+        .DATA.L _intTXI1                 ; 58 H'0000e8   SCI1 TXI1
+        .DATA.L RESERVE                 ; 59 H'0000ec   SCI1 TEI1
+        .DATA.L RESERVE                 ; 60 H'0000f0   A/D ADI
+
+;=======================================
+; スタートアッププログラム
+;=======================================
+        .SECTION P
+RESET_START:
+        MOV.L   #H'FFF10,ER7            ; スタックの設定
+        JSR     @_INITSCT               ; セクションD,R,Bの設定
+        JSR     @_main                  ; C言語のmain()関数へジャンプ
+OWARI:
+        BRA     OWARI
+
+        .END

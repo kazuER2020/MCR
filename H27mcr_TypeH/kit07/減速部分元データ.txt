@@ -1,0 +1,1150 @@
+void newcrank( void )
+{
+	sp_mode(BRAKE , BRAKE);
+         if( kyoritime <=   5 ){     /* クロスライン通過後の減速制御 */
+         if(cnt1 <  50 ){sp(  -50 ,  -50 );}
+    else if(cnt1 <  75 ){sp(  -35 ,  -35 );}
+    else if(cnt1 < 100 ){sp(  -30 ,  -30 );}
+    else if(cnt1 < 125 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 150 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 175 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 200 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 225 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 250 ){sp(    0 ,    0 );}
+    else if(cnt1 < 275 ){sp(   10 ,   10 );}
+    else if(cnt1 < 300 ){sp(   20 ,   20 );}
+    else if(cnt1 < 325 ){sp(   30 ,   30 );}
+    else if(cnt1 < 350 ){sp(   40 ,   40 );}
+    else if(cnt1 < 375 ){sp(   50 ,   50 );}
+    else if(cnt1 < 400 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=   6 ){     /* クロスライン通過後の減速制御 */
+         if(cnt1 <  40 ){sp(  -50 ,  -50 );}
+    else if(cnt1 <  65 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  90 ){sp(  -30 ,  -30 );}
+    else if(cnt1 < 115 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 140 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 165 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 190 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 215 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 240 ){sp(    0 ,    0 );}
+    else if(cnt1 < 265 ){sp(   10 ,   10 );}
+    else if(cnt1 < 290 ){sp(   20 ,   20 );}
+    else if(cnt1 < 315 ){sp(   30 ,   30 );}
+    else if(cnt1 < 340 ){sp(   40 ,   40 );}
+    else if(cnt1 < 365 ){sp(   50 ,   50 );}
+    else if(cnt1 < 390 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=   7 ){     /* クロスライン通過後の減速制御 */
+         if(cnt1 <  30 ){sp(  -50 ,  -50 );}
+    else if(cnt1 <  55 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  80 ){sp(  -30 ,  -30 );}
+    else if(cnt1 < 105 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 130 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 155 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 180 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 205 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 230 ){sp(    0 ,    0 );}
+    else if(cnt1 < 255 ){sp(   10 ,   10 );}
+    else if(cnt1 < 280 ){sp(   20 ,   20 );}
+    else if(cnt1 < 305 ){sp(   30 ,   30 );}
+    else if(cnt1 < 330 ){sp(   40 ,   40 );}
+    else if(cnt1 < 355 ){sp(   50 ,   50 );}
+    else if(cnt1 < 380 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=   8 ){     /* クロスライン通過後の減速制御 */
+         if(cnt1 <  20 ){sp(  -50 ,  -50 );}
+    else if(cnt1 <  45 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  70 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  95 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 120 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 145 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 170 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 195 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 220 ){sp(    0 ,    0 );}
+    else if(cnt1 < 245 ){sp(   10 ,   10 );}
+    else if(cnt1 < 270 ){sp(   20 ,   20 );}
+    else if(cnt1 < 295 ){sp(   30 ,   30 );}
+    else if(cnt1 < 320 ){sp(   40 ,   40 );}
+    else if(cnt1 < 345 ){sp(   50 ,   50 );}
+    else if(cnt1 < 370 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=   9 ){     /* クロスライン通過後の減速制御 */
+         if(cnt1 <  10 ){sp(  -50 ,  -50 );}
+    else if(cnt1 <  35 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  60 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  85 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 110 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 135 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 160 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 185 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 210 ){sp(    0 ,    0 );}
+    else if(cnt1 < 235 ){sp(   10 ,   10 );}
+    else if(cnt1 < 260 ){sp(   20 ,   20 );}
+    else if(cnt1 < 285 ){sp(   30 ,   30 );}
+    else if(cnt1 < 310 ){sp(   40 ,   40 );}
+    else if(cnt1 < 335 ){sp(   50 ,   50 );}
+    else if(cnt1 < 360 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  10 ){     /* クロスライン通過後の減速制御 */
+//         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    if(cnt1 <  25 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  50 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  75 ){sp(  -25 ,  -25 );}
+    else if(cnt1 < 100 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 125 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 150 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 175 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 200 ){sp(    0 ,    0 );}
+    else if(cnt1 < 225 ){sp(   10 ,   10 );}
+    else if(cnt1 < 250 ){sp(   20 ,   20 );}
+    else if(cnt1 < 275 ){sp(   30 ,   30 );}
+    else if(cnt1 < 300 ){sp(   40 ,   40 );}
+    else if(cnt1 < 325 ){sp(   50 ,   50 );}
+    else if(cnt1 < 350 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  11 ){     /* クロスライン通過後の減速制御 */
+//         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    if(cnt1 <  15 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  40 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  65 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  90 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 115 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 140 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 165 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 190 ){sp(    0 ,    0 );}
+    else if(cnt1 < 215 ){sp(   10 ,   10 );}
+    else if(cnt1 < 240 ){sp(   20 ,   20 );}
+    else if(cnt1 < 265 ){sp(   30 ,   30 );}
+    else if(cnt1 < 290 ){sp(   40 ,   40 );}
+    else if(cnt1 < 315 ){sp(   50 ,   50 );}
+    else if(cnt1 < 340 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  12 ){     /* クロスライン通過後の減速制御 */
+//         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    if(cnt1 <   5 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <  30 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  55 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  80 ){sp(  -20 ,  -20 );}
+    else if(cnt1 < 105 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 130 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 155 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 180 ){sp(    0 ,    0 );}
+    else if(cnt1 < 205 ){sp(   10 ,   10 );}
+    else if(cnt1 < 230 ){sp(   20 ,   20 );}
+    else if(cnt1 < 255 ){sp(   30 ,   30 );}
+    else if(cnt1 < 280 ){sp(   40 ,   40 );}
+    else if(cnt1 < 305 ){sp(   50 ,   50 );}
+    else if(cnt1 < 330 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  13 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}	*/
+    if(cnt1 <  20 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  45 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  70 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  95 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 120 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 145 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 170 ){sp(    0 ,    0 );}
+    else if(cnt1 < 195 ){sp(   10 ,   10 );}
+    else if(cnt1 < 220 ){sp(   20 ,   20 );}
+    else if(cnt1 < 245 ){sp(   30 ,   30 );}
+    else if(cnt1 < 270 ){sp(   40 ,   40 );}
+    else if(cnt1 < 295 ){sp(   50 ,   50 );}
+    else if(cnt1 < 320 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  14 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}	*/
+    if(cnt1 <  10 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <  35 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  60 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  85 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 110 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 135 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 160 ){sp(    0 ,    0 );}
+    else if(cnt1 < 185 ){sp(   10 ,   10 );}
+    else if(cnt1 < 210 ){sp(   20 ,   20 );}
+    else if(cnt1 < 235 ){sp(   30 ,   30 );}
+    else if(cnt1 < 260 ){sp(   40 ,   40 );}
+    else if(cnt1 < 285 ){sp(   50 ,   50 );}
+    else if(cnt1 < 310 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  15 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}	*/
+    if(cnt1 <  25 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  50 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  75 ){sp(  -15 ,  -15 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 125 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 150 ){sp(    0 ,    0 );}
+    else if(cnt1 < 175 ){sp(   10 ,   10 );}
+    else if(cnt1 < 200 ){sp(   20 ,   20 );}
+    else if(cnt1 < 225 ){sp(   30 ,   30 );}
+    else if(cnt1 < 250 ){sp(   40 ,   40 );}
+    else if(cnt1 < 275 ){sp(   50 ,   50 );}
+    else if(cnt1 < 300 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  16 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}	*/
+    if(cnt1 <  15 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  40 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  65 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  90 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 115 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 140 ){sp(    0 ,    0 );}
+    else if(cnt1 < 165 ){sp(   10 ,   10 );}
+    else if(cnt1 < 190 ){sp(   20 ,   20 );}
+    else if(cnt1 < 215 ){sp(   30 ,   30 );}
+    else if(cnt1 < 240 ){sp(   40 ,   40 );}
+    else if(cnt1 < 265 ){sp(   50 ,   50 );}
+    else if(cnt1 < 290 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  17 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}	*/
+    if(cnt1 <   5 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <  30 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  55 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  80 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 105 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 130 ){sp(    0 ,    0 );}
+    else if(cnt1 < 155 ){sp(   10 ,   10 );}
+    else if(cnt1 < 180 ){sp(   20 ,   20 );}
+    else if(cnt1 < 205 ){sp(   30 ,   30 );}
+    else if(cnt1 < 230 ){sp(   40 ,   40 );}
+    else if(cnt1 < 255 ){sp(   50 ,   50 );}
+    else if(cnt1 < 280 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  18 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}	*/
+    if(cnt1 <  20 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  45 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  70 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  95 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 145 ){sp(   10 ,   10 );}
+    else if(cnt1 < 170 ){sp(   20 ,   20 );}
+    else if(cnt1 < 195 ){sp(   30 ,   30 );}
+    else if(cnt1 < 220 ){sp(   40 ,   40 );}
+    else if(cnt1 < 245 ){sp(   50 ,   50 );}
+    else if(cnt1 < 270 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  19 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}	*/
+    if(cnt1 <  10 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <  35 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  60 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  85 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 110 ){sp(    0 ,    0 );}
+    else if(cnt1 < 135 ){sp(   10 ,   10 );}
+    else if(cnt1 < 160 ){sp(   20 ,   20 );}
+    else if(cnt1 < 185 ){sp(   30 ,   30 );}
+    else if(cnt1 < 210 ){sp(   40 ,   40 );}
+    else if(cnt1 < 235 ){sp(   50 ,   50 );}
+    else if(cnt1 < 260 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  20 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}	*/
+    if(cnt1 <  25 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  50 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  75 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 100 ){sp(    0 ,    0 );}
+    else if(cnt1 < 125 ){sp(   10 ,   10 );}
+    else if(cnt1 < 150 ){sp(   20 ,   20 );}
+    else if(cnt1 < 175 ){sp(   30 ,   30 );}
+    else if(cnt1 < 200 ){sp(   40 ,   40 );}
+    else if(cnt1 < 225 ){sp(   50 ,   50 );}
+    else if(cnt1 < 250 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  21 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}	*/
+    if(cnt1 <  15 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  40 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  65 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  90 ){sp(    0 ,    0 );}
+    else if(cnt1 < 115 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 165 ){sp(   30 ,   30 );}
+    else if(cnt1 < 190 ){sp(   40 ,   40 );}
+    else if(cnt1 < 215 ){sp(   50 ,   50 );}
+    else if(cnt1 < 240 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  22 ){     /* クロスライン通過後の減速制御 */
+ /*        if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}	*/
+    if(cnt1 <   5 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <  30 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  55 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  80 ){sp(    0 ,    0 );}
+    else if(cnt1 < 105 ){sp(   10 ,   10 );}
+    else if(cnt1 < 130 ){sp(   20 ,   20 );}
+    else if(cnt1 < 155 ){sp(   30 ,   30 );}
+    else if(cnt1 < 180 ){sp(   40 ,   40 );}
+    else if(cnt1 < 205 ){sp(   50 ,   50 );}
+    else if(cnt1 < 230 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  23 ){     /* クロスライン通過後の減速制御 */
+ /*        if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}	*/
+    if(cnt1 <  20 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  45 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  70 ){sp(    0 ,    0 );}
+    else if(cnt1 <  95 ){sp(   10 ,   10 );}
+    else if(cnt1 < 120 ){sp(   20 ,   20 );}
+    else if(cnt1 < 145 ){sp(   30 ,   30 );}
+    else if(cnt1 < 170 ){sp(   40 ,   40 );}
+    else if(cnt1 < 195 ){sp(   50 ,   50 );}
+    else if(cnt1 < 220 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  24 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}	*/
+    if(cnt1 <  10 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <  35 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  60 ){sp(    0 ,    0 );}
+    else if(cnt1 <  85 ){sp(   10 ,   10 );}
+    else if(cnt1 < 110 ){sp(   20 ,   20 );}
+    else if(cnt1 < 135 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 185 ){sp(   50 ,   50 );}
+    else if(cnt1 < 210 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  25 ){     /* クロスライン通過後の減速制御 */
+ /*        if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}	*/
+    if(cnt1 <  25 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  50 ){sp(    0 ,    0 );}
+    else if(cnt1 <  75 ){sp(   10 ,   10 );}
+    else if(cnt1 < 100 ){sp(   20 ,   20 );}
+    else if(cnt1 < 125 ){sp(   30 ,   30 );}
+    else if(cnt1 < 150 ){sp(   40 ,   40 );}
+    else if(cnt1 < 175 ){sp(   50 ,   50 );}
+    else if(cnt1 < 200 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  26 ){     /* クロスライン通過後の減速制御 */
+  /*       if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}	*/
+    if(cnt1 <  15 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  40 ){sp(    0 ,    0 );}
+    else if(cnt1 <  65 ){sp(   10 ,   10 );}
+    else if(cnt1 <  90 ){sp(   20 ,   20 );}
+    else if(cnt1 < 115 ){sp(   30 ,   30 );}
+    else if(cnt1 < 140 ){sp(   40 ,   40 );}
+    else if(cnt1 < 165 ){sp(   50 ,   50 );}
+    else if(cnt1 < 190 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  27 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}	*/
+    if(cnt1 <   5 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <  30 ){sp(    0 ,    0 );}
+    else if(cnt1 <  55 ){sp(   10 ,   10 );}
+    else if(cnt1 <  80 ){sp(   20 ,   20 );}
+    else if(cnt1 < 105 ){sp(   30 ,   30 );}
+    else if(cnt1 < 130 ){sp(   40 ,   40 );}
+    else if(cnt1 < 155 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  28 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}	*/
+    if(cnt1 <  20 ){sp(    0 ,    0 );}
+    else if(cnt1 <  45 ){sp(   10 ,   10 );}
+    else if(cnt1 <  70 ){sp(   20 ,   20 );}
+    else if(cnt1 <  95 ){sp(   30 ,   30 );}
+    else if(cnt1 < 120 ){sp(   40 ,   40 );}
+    else if(cnt1 < 145 ){sp(   50 ,   50 );}
+    else if(cnt1 < 170 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  29 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}	*/
+    if(cnt1 <  10 ){sp(    0 ,    0 );}
+    else if(cnt1 <  35 ){sp(   10 ,   10 );}
+    else if(cnt1 <  60 ){sp(   20 ,   20 );}
+    else if(cnt1 <  85 ){sp(   30 ,   30 );}
+    else if(cnt1 < 110 ){sp(   40 ,   40 );}
+    else if(cnt1 < 135 ){sp(   50 ,   50 );}
+    else if(cnt1 < 160 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  30 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}	*/
+    if(cnt1 <  25 ){sp(   10 ,   10 );}
+    else if(cnt1 <  50 ){sp(   20 ,   20 );}
+    else if(cnt1 <  75 ){sp(   30 ,   30 );}
+    else if(cnt1 < 100 ){sp(   40 ,   40 );}
+    else if(cnt1 < 125 ){sp(   50 ,   50 );}
+    else if(cnt1 < 150 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  31 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}	*/
+    if(cnt1 <  15 ){sp(   10 ,   10 );}
+    else if(cnt1 <  40 ){sp(   20 ,   20 );}
+    else if(cnt1 <  65 ){sp(   30 ,   30 );}
+    else if(cnt1 <  90 ){sp(   40 ,   40 );}
+    else if(cnt1 < 115 ){sp(   50 ,   50 );}
+    else if(cnt1 < 140 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  32 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}	*/
+    if(cnt1 <   5 ){sp(   10 ,   10 );}
+    else if(cnt1 <  30 ){sp(   20 ,   20 );}
+    else if(cnt1 <  55 ){sp(   30 ,   30 );}
+    else if(cnt1 <  80 ){sp(   40 ,   40 );}
+    else if(cnt1 < 105 ){sp(   50 ,   50 );}
+    else if(cnt1 < 130 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  33 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}	
+    else if(cnt1 <   0 ){sp(   10 ,   10 );}	*/
+    if(cnt1 <  20 ){sp(   20 ,   20 );}
+    else if(cnt1 <  45 ){sp(   30 ,   30 );}
+    else if(cnt1 <  70 ){sp(   40 ,   40 );}
+    else if(cnt1 <  95 ){sp(   50 ,   50 );}
+    else if(cnt1 < 120 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  34 ){     /* クロスライン通過後の減速制御 */
+
+    if(cnt1 <  10 ){sp(   20 ,   20 );}
+    else if(cnt1 <  35 ){sp(   30 ,   30 );}
+    else if(cnt1 <  60 ){sp(   40 ,   40 );}
+    else if(cnt1 <  85 ){sp(   50 ,   50 );}
+    else if(cnt1 < 110 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  35 ){     /* クロスライン通過後の減速制御 */
+
+    if(cnt1 <  25 ){sp(   30 ,   30 );}
+    else if(cnt1 <  50 ){sp(   40 ,   40 );}
+    else if(cnt1 <  75 ){sp(   50 ,   50 );}
+    else if(cnt1 < 100 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  36 ){     /* クロスライン通過後の減速制御 */
+	
+    if(cnt1 <  15 ){sp(   30 ,   30 );}
+    else if(cnt1 <  40 ){sp(   40 ,   40 );}
+    else if(cnt1 <  65 ){sp(   50 ,   50 );}
+    else if(cnt1 <  90 ){sp(   60 ,   60 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  37 ){     /* クロスライン通過後の減速制御 */
+
+    if(cnt1 <   5 ){sp(   30 ,   30 );}
+    else if(cnt1 <  30 ){sp(   40 ,   40 );}
+    else if(cnt1 <  55 ){sp(   50 ,   50 );}
+    else if(cnt1 <  80 ){sp(   70 ,   70 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  38 ){     /* クロスライン通過後の減速制御 */
+
+    if(cnt1 <  20 ){sp(   50 ,   50 );}
+    else if(cnt1 <  45 ){sp(   60 ,   60 );}
+    else if(cnt1 <  70 ){sp(   70 ,   70 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  39 ){     /* クロスライン通過後の減速制御 */
+ /*        if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}
+    else if(cnt1 <   0 ){sp(   10 ,   10 );}
+    else if(cnt1 <   0 ){sp(   20 ,   20 );}
+    else if(cnt1 <   0 ){sp(   30 ,   30 );}	*/
+    if(cnt1 <  10 ){sp(   50 ,   50 );}
+    else if(cnt1 <  35 ){sp(   60 ,   60 );}
+    else if(cnt1 <  60 ){sp(   70 ,   70 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else if( kyoritime <=  40 ){     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}
+    else if(cnt1 <   0 ){sp(   10 ,   10 );}
+    else if(cnt1 <   0 ){sp(   20 ,   20 );}
+    else if(cnt1 <   0 ){sp(   30 ,   30 );}
+    else if(cnt1 <   0 ){sp(   40 ,   40 );}	*/
+    if(cnt1 <  25 ){sp(   60 ,   60 );}
+    else if(cnt1 <  50 ){sp(   70 ,   70 );}
+                   else {sp(   80 ,   80 );}
+    }
+    else                       {     /* クロスライン通過後の減速制御 */
+/*         if(cnt1 <   0 ){sp(  -40 ,  -40 );}
+    else if(cnt1 <   0 ){sp(  -35 ,  -35 );}
+    else if(cnt1 <   0 ){sp(  -30 ,  -30 );}
+    else if(cnt1 <   0 ){sp(  -25 ,  -25 );}
+    else if(cnt1 <   0 ){sp(  -20 ,  -20 );}
+    else if(cnt1 <   0 ){sp(  -15 ,  -15 );}
+    else if(cnt1 <   0 ){sp(  -10 ,  -10 );}
+    else if(cnt1 <   0 ){sp(   -5 ,   -5 );}
+    else if(cnt1 <   0 ){sp(    0 ,    0 );}
+    else if(cnt1 <   0 ){sp(   10 ,   10 );}
+    else if(cnt1 <   0 ){sp(   20 ,   20 );}
+    else if(cnt1 <   0 ){sp(   30 ,   30 );}
+    else if(cnt1 <   0 ){sp(   40 ,   40 );}	*/
+    if(cnt1 <  15 ){sp(   60 ,   60 );}
+    else if(cnt1 <  40 ){sp(   70 ,   70 );}
+                   else {sp(   80 ,   80 );}
+    }
+}
+
+/********************************************************************/
+/* 各距離のレーンチェンジ処理の集合									*/
+/* 処理パターンについては先頭のグローバル変数の宣言にて行う			*/
+/********************************************************************/
+void shasenhenkou( void )
+{
+	unsigned char b, c;
+	b = sensor_inp(MASK4_0);
+	c = sensor_inp(MASK0_4);
+	sp_mode( FREE , FREE );
+	
+	if( b == 0xf0 ){
+		pattern = 130;	
+	}
+	if( b == 0x0f ){
+		pattern = 140;	
+	}
+	
+         if( kyoritime <=   3 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  30 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   4 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  35 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   5 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  40 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   6 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  45 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   7 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  50 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   8 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  55 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=   9 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  60 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  10 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  65 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  11 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  70 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  12 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  75 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  13 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  80 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  14 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  85 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  15 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  90 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  16 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 <  95 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  17){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 100 ){sp(  100 ,  100 );}
+    else if(cnt1 < 100 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  18 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 105 ){sp(  100 ,  100 );}
+    else if(cnt1 < 105 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  19 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 110 ){sp(  100 ,  100 );}
+    else if(cnt1 < 110 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 110 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  20 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 115 ){sp(  100 ,  100 );}
+    else if(cnt1 < 115 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 115 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  21 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 120 ){sp(  100 ,  100 );}
+    else if(cnt1 < 120 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 120 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 120 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 , 100 );}
+    }
+    else if( kyoritime <=  22 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 125 ){sp(  100 ,  100 );}
+    else if(cnt1 < 125 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 125 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 125 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  23 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 130 ){sp(  100 ,  100 );}
+    else if(cnt1 < 130 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 130 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 130 ){sp(    0 ,    0 );}
+    else if(cnt1 < 130 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  24 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 135 ){sp(  100 ,  100 );}
+    else if(cnt1 < 135 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 135 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 135 ){sp(    0 ,    0 );}
+    else if(cnt1 < 135 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  25 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 140 ){sp(  100 ,  100 );}
+    else if(cnt1 < 140 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 140 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 140 ){sp(    0 ,    0 );}
+    else if(cnt1 < 140 ){sp(   10 ,   10 );}
+    else if(cnt1 < 140 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  26 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 145 ){sp(  100 ,  100 );}
+    else if(cnt1 < 145 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 145 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 145 ){sp(    0 ,    0 );}
+    else if(cnt1 < 145 ){sp(   10 ,   10 );}
+    else if(cnt1 < 145 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  27 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 150 ){sp(  100 ,  100 );}
+    else if(cnt1 < 150 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 150 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 150 ){sp(    0 ,    0 );}
+    else if(cnt1 < 150 ){sp(   10 ,   10 );}
+    else if(cnt1 < 150 ){sp(   20 ,   20 );}
+    else if(cnt1 < 150 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  28 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 155 ){sp(  100 ,  100 );}
+    else if(cnt1 < 155 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 155 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 155 ){sp(    0 ,    0 );}
+    else if(cnt1 < 155 ){sp(   10 ,   10 );}
+    else if(cnt1 < 155 ){sp(   20 ,   20 );}
+    else if(cnt1 < 155 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  29 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 160 ){sp(  100 ,  100 );}
+    else if(cnt1 < 160 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 160 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 160 ){sp(    0 ,    0 );}
+    else if(cnt1 < 160 ){sp(   10 ,   10 );}
+    else if(cnt1 < 160 ){sp(   20 ,   20 );}
+    else if(cnt1 < 160 ){sp(   30 ,   30 );}
+    else if(cnt1 < 160 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  30 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 165 ){sp(  100 ,  100 );}
+    else if(cnt1 < 165 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 165 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 165 ){sp(    0 ,    0 );}
+    else if(cnt1 < 165 ){sp(   10 ,   10 );}
+    else if(cnt1 < 165 ){sp(   20 ,   20 );}
+    else if(cnt1 < 165 ){sp(   30 ,   30 );}
+    else if(cnt1 < 165 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  31 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 170 ){sp(  100 ,  100 );}
+    else if(cnt1 < 170 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 170 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 170 ){sp(    0 ,    0 );}
+    else if(cnt1 < 170 ){sp(   10 ,   10 );}
+    else if(cnt1 < 170 ){sp(   20 ,   20 );}
+    else if(cnt1 < 170 ){sp(   30 ,   30 );}
+    else if(cnt1 < 170 ){sp(   40 ,   40 );}
+    else if(cnt1 < 170 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  32 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 175 ){sp(  100 ,  100 );}
+    else if(cnt1 < 175 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 175 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 175 ){sp(    0 ,    0 );}
+    else if(cnt1 < 175 ){sp(   10 ,   10 );}
+    else if(cnt1 < 175 ){sp(   20 ,   20 );}
+    else if(cnt1 < 175 ){sp(   30 ,   30 );}
+    else if(cnt1 < 175 ){sp(   40 ,   40 );}
+    else if(cnt1 < 175 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  33 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 180 ){sp(  100 ,  100 );}
+    else if(cnt1 < 180 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 180 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 180 ){sp(    0 ,    0 );}
+    else if(cnt1 < 180 ){sp(   10 ,   10 );}
+    else if(cnt1 < 180 ){sp(   20 ,   20 );}
+    else if(cnt1 < 180 ){sp(   30 ,   30 );}
+    else if(cnt1 < 180 ){sp(   40 ,   40 );}
+    else if(cnt1 < 180 ){sp(   50 ,   50 );}
+    else if(cnt1 < 180 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  34 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 185 ){sp(  100 ,  100 );}
+    else if(cnt1 < 185 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 185 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 185 ){sp(    0 ,    0 );}
+    else if(cnt1 < 185 ){sp(   10 ,   10 );}
+    else if(cnt1 < 185 ){sp(   20 ,   20 );}
+    else if(cnt1 < 185 ){sp(   30 ,   30 );}
+    else if(cnt1 < 185 ){sp(   40 ,   40 );}
+    else if(cnt1 < 185 ){sp(   50 ,   50 );}
+    else if(cnt1 < 185 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else if( kyoritime <=  35 ){  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 190 ){sp(  100 ,  100 );}
+    else if(cnt1 < 190 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 190 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 190 ){sp(    0 ,    0 );}
+    else if(cnt1 < 190 ){sp(   10 ,   10 );}
+    else if(cnt1 < 190 ){sp(   20 ,   20 );}
+    else if(cnt1 < 190 ){sp(   30 ,   30 );}
+    else if(cnt1 < 190 ){sp(   40 ,   40 );}
+    else if(cnt1 < 190 ){sp(   50 ,   50 );}
+    else if(cnt1 < 190 ){sp(   60 ,   60 );}
+    else if(cnt1 < 190 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+    else                       {  /* 車線変更ライン通過後の減速制御 */
+         if(cnt1 < 195 ){sp(  100 ,  100 );}
+    else if(cnt1 < 195 ){sp(  -10 ,  -10 );}
+    else if(cnt1 < 195 ){sp(   -5 ,   -5 );}
+    else if(cnt1 < 195 ){sp(    0 ,    0 );}
+    else if(cnt1 < 195 ){sp(   10 ,   10 );}
+    else if(cnt1 < 195 ){sp(   20 ,   20 );}
+    else if(cnt1 < 195 ){sp(   30 ,   30 );}
+    else if(cnt1 < 195 ){sp(   40 ,   40 );}
+    else if(cnt1 < 195 ){sp(   50 ,   50 );}
+    else if(cnt1 < 195 ){sp(   60 ,   60 );}
+    else if(cnt1 < 195 ){sp(   70 ,   70 );}
+    else if(cnt1 < 200 ){sp(   80 ,   80 );}
+                   else {sp(   100 ,   100 );}
+    }
+}
