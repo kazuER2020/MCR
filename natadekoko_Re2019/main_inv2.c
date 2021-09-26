@@ -366,7 +366,9 @@ void main( void ) {
 		// 坂道処理
 		sakaSyori(); // 坂道処理をmain関数のwhileﾙｰﾌﾟ内に入れる
 		if((lEncoderTotal >= (data_buff[DF_ENC_END]*1091L)) || endFlag == 1){ // エンコーダがdata_buff[DF_ENC_END]なら停止
-			pattern = 101;	
+			if( pattern == 11 || pattern == 12 || pattern == 13 || pattern == 14){
+				pattern = 101;	
+			}
 		}
 	}
 	
@@ -531,6 +533,7 @@ void main( void ) {
         break;
 		
       case 11:				//通常トレース
+		gain = 10;
 		servoPwmOut(iServoPwm);
 		crank_mode = 0;
 		speed_target = data_buff[DF_TESTSPEED];	//スピード目標　パラメータTESTSPEED(通常走行スピード)	
@@ -595,6 +598,7 @@ void main( void ) {
 	  	break;			
 	
     case 12:					//コーナーの速度制御処理 12 < angle <= 30
+		gain = 10;
 		servoPwmOut(iServoPwm);
 		corner_speed = data_buff[DF_CURVE_SPEED];//スピード目標　パラメータn_s(通常走行スピード)	
 		if(abs(angle)<=12){
@@ -644,6 +648,7 @@ void main( void ) {
 
     case 13:	//コーナーのブレーキ処理　１段階目 100mm
 		/*パターン13になったら100 [mm]ブレーキ走行*/ 
+		gain = 10;
 		servoPwmOut(iServoPwm);
 		motor_mode_f(BRAKE,BRAKE);	
 		motor_mode_r(BRAKE,BRAKE);	
@@ -699,6 +704,7 @@ void main( void ) {
 
     case 14:	//コーナーのブレーキ処理　2段階目 100mm
 		servoPwmOut(iServoPwm);
+		gain = 10;
 		motor_mode_f(BRAKE,BRAKE);	
 		motor_mode_r(BRAKE,BRAKE);	
 		motor_f(0,0);	//前（左,右）
@@ -789,8 +795,8 @@ void main( void ) {
           motor_f( -100, -100 );
           motor_r( -100, -100 );
         } else if(iEncoder < data_buff[DF_CRANK_SPEED]) {
-          motor_f( 60, 60 );
-          motor_r( 60, 60 );
+          motor_f( 50, 50 );
+          motor_r( 50, 50 );
         } else {
 			motor_f( 0, 0 );
 			motor_r( 0, 0 );
